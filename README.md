@@ -91,3 +91,29 @@ ellipse(x, y, 5);
 let x = frameCount%width;
 let hue = map(x, 0, width, 0, 360);
 ```
+
+## translate
+
+```js
+translate(width/2, height/2);
+ellipse(0, 0, 50);
+```
+
+## rotate
+
+```js
+rotate(frameCount/100);
+rect(0, 0, 50);
+```
+
+## push/pop
+
+```js
+push();
+translate(width/2, height/2);
+rotate(frameCount/100);
+rect(0, 0, 50);
+pop();
+```
+
+
